@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"search/service"
+)
 
 func main() {
 	users := []string{
@@ -15,17 +17,5 @@ func main() {
 		"Glena Reichert",
 		"Clementina DuBuque",
 	}
-	searchParams(users, "Kurtis Weissnat")
-}
-func searchParams(users []string, name string) {
-	for x := range users {
-		if users[x] == name {
-			result := []string{users[x]}
-
-			fmt.Println(result)
-			return
-		}
-	}
-	result := []string{}
-	fmt.Println(result)
+	service.SearchParams(users, "Glena")
 }
