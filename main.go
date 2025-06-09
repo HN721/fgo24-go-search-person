@@ -23,11 +23,8 @@ func searchParams(users []string, name string) {
 			result := []string{users[x]}
 
 			fmt.Println(result)
-		} else {
-			result := []string{}
-			fmt.Println(result)
-
 		}
-
 	}
+	result := []string{}
+	fmt.Println(result)
 }
