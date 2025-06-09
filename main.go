@@ -15,7 +15,7 @@ func main() {
 		"Glena Reichert",
 		"Clementina DuBuque",
 	}
-	searchParams(users, "Glena Reichert")
+	searchParams(users, "Glena ")
 }
 func searchParams(users []string, name string) {
 	for x := range users {
